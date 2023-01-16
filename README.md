@@ -9,3 +9,5 @@ geth --datadir /web3/devdata --networkid 18 --port 30303 --http --http.addr 0.0.
 
 nohup  geth --datadir /web3/devdata --networkid 10086 --port 30303 --http --http.addr 0.0.0.0 --http.vhosts "*"  --http.port 8545 --http.api 'db,net,eth,web3,personal' --http.corsdomain "*"  --dev --dev.period 1 > 1.log & 
 
+
+geth 最新版本狐狸可能有问题 这里下载的1.9
