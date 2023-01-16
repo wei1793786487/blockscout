@@ -7,3 +7,5 @@ docker run -it -d --name ethereum-node -p 8545:8545 -p 30303:30303   ethereum/cl
 
 geth --datadir /web3/devdata --networkid 18 --port 30303 --http --http.addr 0.0.0.0 --http.vhosts "*"  --http.port 8545 --http.api 'db,net,eth,web3,personal' --http.corsdomain "*"  --dev --dev.period 1 console 2> 1.log
 
+nohup  geth --datadir /web3/devdata --networkid 10086 --port 30303 --http --http.addr 0.0.0.0 --http.vhosts "*"  --http.port 8545 --http.api 'db,net,eth,web3,personal' --http.corsdomain "*"  --dev --dev.period 1 > 1.log & 
+
